@@ -1,2 +1,2 @@
-js-tjrpg-tutorial
+#Tactical Role Playing Game in JavaScript &amp; CreateJS
 =================
