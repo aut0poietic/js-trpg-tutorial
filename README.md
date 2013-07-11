@@ -1,4 +1,4 @@
-#TRPG in JavaScript 
+#TRPG in JavaScript
 
 Companion source for my articles experimenting with building a browser-based Tactical RPG game in JavaScript
 using CreateJS and any other library that occurs to me along the way.
