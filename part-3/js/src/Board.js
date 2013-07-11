@@ -7,6 +7,7 @@ trpg.Board = function( image ){
 	this.tiles = undefined ;
 	this.initialize( image ) ;
 } ;
+
 trpg.Board.prototype = _.extend( new createjs.Container() , {
 
 	initialize : function( image ) {
@@ -30,7 +31,7 @@ trpg.Board.prototype = _.extend( new createjs.Container() , {
 
 		board.x = board.y = grid.x = grid.y = bg.x = bg.y = 0;
 
-		grid.graphics.beginFill( createjs.Graphics.getRGB( 255, 255, 255 , 0.4 ) ) ;
+		grid.graphics.beginFill( createjs.Graphics.getRGB( 0, 0, 0 , 0.4 ) ) ;
 
 		for( var i = trpg.GRID ; i <= image.width ; i += trpg.GRID ){
 			grid.graphics.drawRect( i  , 0 , 1 , image.height );
@@ -73,7 +74,6 @@ trpg.Board.prototype = _.extend( new createjs.Container() , {
 		else if( this.cursor.gridX > boundingbox.right ){
 			this.gridX = Math.min( trpg.bounds.right - trpg.viewport.width , this.gridX + 1 ) ;
 		}
-
 		this.x = ( this.gridX * trpg.GRID ) * -1 ;
 		this.y = ( this.gridY * trpg.GRID ) * -1 ;
 

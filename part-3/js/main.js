@@ -18,7 +18,11 @@
  *	TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-//@codekit-prepend "src/namespace.js", "src/Utilities.js", "src/Board.js";
+//@codekit-prepend "src/namespace.js";
+//@codekit-prepend "src/Utilities.js";
+//@codekit-prepend "src/Cursor.js";
+//@codekit-prepend "src/Board.js";
+//@codekit-prepend "src/Engine.js";
 
 window.onload = function(){
 	"use strict";
